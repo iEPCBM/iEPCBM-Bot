@@ -25,7 +25,7 @@ Note:
 YouTube is Google's trade mark
 ***
 
-**iEPCBM Bot** is Wikipedia bot, that written in Python. Bot helps to update YouTube channel statistics (quantity subscriptions and  channel views).
+**iEPCBM Bot** is Wikipedia bot that written in Python. Bot helps to update YouTube channel statistics (quantity subscriptions and  channel views).
 
 Bot uses for working PyWikiBot. Also bot uses Google API to get information about the YouTube channel.
 
