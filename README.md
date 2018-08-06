@@ -18,7 +18,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-Program use GoogleAPI.
+Program use Google API.
 GoogleAPIs Terms of Service - <https://developers.google.com/terms/>
 
 Note:
@@ -26,6 +26,8 @@ YouTube is Google's trade mark
 ***
 
 **iEPCBM Bot** is Wikipedia bot, that written in Python. Bot helps to update YouTube channel statistics (quantity subscriptions and  channel views).
+
+Bot uses for working PyWikiBot. Also bot uses Google API to get information about the YouTube channel.
 
 ## Contacts
 Rishat Kagirov
