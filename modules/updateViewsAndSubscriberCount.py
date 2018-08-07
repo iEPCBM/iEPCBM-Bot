@@ -125,13 +125,6 @@ def updateViewsAndSubscribersCount (member, site):
         if not isFound:
             del templateParams[index]
             isRemNParams = True
-    # isFormatted = templateParams != templateParams.sort \
-        # (key = lambda listMember: sortByTemplate(listMember, TemplateYouTubePerson_list)) # Хм... В templateParams элементы расположены в случайном порядке. Не будет работать как надо (высока вероятность, что isFormatted будет равен True) :)
-    # IEBLogger.debug ("Template's parameters == templateParams.sort? 1 - Yes.")
-    # if (input()==1):
-        # isFormatted = False
-    # else:
-        # isFormatted = True
     templateParams.sort (key = lambda listMember: sortByTemplate(listMember, TemplateYouTubePerson_list))
     curMaxLen = 0
     for memberData in templateParams:
