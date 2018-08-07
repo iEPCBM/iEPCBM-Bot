@@ -30,7 +30,7 @@
 '''
 
 # == GoogleAPI ключ == 
-GoogleAPI_key_code = "AIzaSyB0KQ-yzaXl9VYeG4qxuxk0OyaCaiMYnvU" # Здесь всё прикрыто крестиками :P
+GoogleAPI_key_code = "XXXX" # Здесь всё прикрыто крестиками :P
 
 # == Круглые числа ==
 thousand = 1000
