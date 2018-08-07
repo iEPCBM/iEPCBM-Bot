@@ -66,8 +66,8 @@ def updateViewsAndSubscribersCount (member, site):
     isRemNParams = False
     isCorrected = False
     listOfChannelsToInvite = u""
-    fParams = [];
-    templateParams = [];
+    fParams = []
+    templateParams = []
     KTIsFound = False
     for template in page.templatesWithParams():
         if template[0].title() == keyTemplate:
