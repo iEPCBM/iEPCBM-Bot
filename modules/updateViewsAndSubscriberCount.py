@@ -1,32 +1,26 @@
 # -*- coding: utf-8 -*-
 
+## This file is part of iEPCBM Bot (YaLVA-B1).
 '''
-    iEPCBM Bot (YaLVA-B1) is Wikipedia bot
-    Copyright (C) 2017, 2018  Rishat Kagirov (iEPCBM)
-	
-	This file is part of iEPCBM Bot.
-    
-    iEPCBM Bot is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-    
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-    
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <https://www.gnu.org/licenses/>.
-    
-    **************************************************************************
-    
-    Program use GoogleAPI.
-    GoogleAPIs Terms of Service - <https://developers.google.com/terms/>
-    
-    **************************************************************************
-    Note:
-        YouTube is Google's trade mark
+iEPCBM Bot (YaLVA-B1) - Wikipedia bot
+Copyright (C) 2017-2018  Rishat Kagirov (iEPCBM)
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+***********************************************************************
+Note:
+    Used Google's trade mark: YouTube
 '''
 
 import os, sys
@@ -66,11 +60,17 @@ def updateViewsAndSubscribersCount (member, site):
     isRemNParams = False
     isCorrected = False
     listOfChannelsToInvite = u""
-    fParams = []
-    templateParams = []
+    usedTemplates = u""
+    fParams = [];
+    templateParams = [];
     KTIsFound = False
     for template in page.templatesWithParams():
-        if template[0].title() == keyTemplate:
+        if template[0].title() == nsTemplate + keyTemplate1 or \
+           template[0].title() == nsTemplate + keyTemplate2 or \
+           template[0].title() == nsTemplate + keyTemplate3 or \
+           template[0].title() == nsTemplate + keyTemplate4 or \
+           template[0].title() == nsTemplate + keyTemplate5:
+            usedTemplates = template[0].title()[len(nsTemplate):]
             KTIsFound = True
             for templateMember in template[1]:
                 for memberNameOfParamsUsed in TemplateYouTubePerson_list_used_names:
@@ -108,9 +108,9 @@ def updateViewsAndSubscribersCount (member, site):
                     templateParams.append ({"name": templateMember.split('=', 1)[0],
                                             "value": templateMember.split('=', 1)[1]})
     if (not KTIsFound):
-        IEBLogger.warn ("[[" + keyTemplate + "]]" + " not found in article " + "[[" + member["ruWikipediaArticleTitle"] + "]]");
+        IEBLogger.warn ("Required template is not found in article " + "[[" + member["ruWikipediaArticleTitle"] + "]]");
         return False
-    newTemplateConf = keyOpenTemplate + u"\n"
+    newTemplateConf = openTemplate + usedTemplates + u"\n"
     for memberTplParams2FWP in templateParams:
         for tplWPParam in TemplateYouTubePersonWrongParams_list:
             if tplWPParam["name"] == memberTplParams2FWP["name"]:
@@ -125,6 +125,13 @@ def updateViewsAndSubscribersCount (member, site):
         if not isFound:
             del templateParams[index]
             isRemNParams = True
+    # isFormatted = templateParams != templateParams.sort \
+        # (key = lambda listMember: sortByTemplate(listMember, TemplateYouTubePerson_list)) # Хм... В templateParams элементы расположены в случайном порядке. Не будет работать как надо (высока вероятность, что isFormatted будет равен True) :)
+    # IEBLogger.debug ("Template's parameters == templateParams.sort? 1 - Yes.")
+    # if (input()==1):
+        # isFormatted = False
+    # else:
+        # isFormatted = True
     templateParams.sort (key = lambda listMember: sortByTemplate(listMember, TemplateYouTubePerson_list))
     curMaxLen = 0
     for memberData in templateParams:
@@ -146,7 +153,7 @@ def updateViewsAndSubscribersCount (member, site):
             i += 1
         newTemplateConf += u"| " + memberData["name"] + spacePaddingBefore + u"=" + spacePaddingAfter + memberData["value"] + u"\n"
     newTemplateConf += closeTemplate
-    basePos = page.text.find(keyOpenTemplate)
+    basePos = page.text.find(openTemplate + usedTemplates)
     openedBrakets = 0
     i = basePos
     while True:
