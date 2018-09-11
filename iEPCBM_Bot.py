@@ -70,7 +70,7 @@ import datetime
 import re
 import time
 
-# Подключаем собственические скрипты 
+# Подключаем свои скрипты 
 from bot_config import *
 from getDataFrom_YouTube import *
 from list_channels import *
