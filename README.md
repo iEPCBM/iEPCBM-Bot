@@ -18,7 +18,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-Program use Google API.
+Program uses Google API.
 GoogleAPIs Terms of Service - <https://developers.google.com/terms/>
 
 Note:
