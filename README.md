@@ -3,7 +3,7 @@
 ***
 iEPCBM Bot is Wikipedia bot
 
-Copyright © 2017, 2018  Rishat Kagirov (iEPCBM)
+Copyright © 2017-2019  Rishat Kagirov (iEPCBM)
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
