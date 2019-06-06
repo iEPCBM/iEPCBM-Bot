@@ -32,7 +32,7 @@
 # doc for program
 '''
     iEPCBM Bot (YaLVA-B1) is Wikipedia bot
-    Copyright (C) 2017, 2018  Rishat Kagirov (iEPCBM)
+    Copyright (C) 2017-2019  Rishat Kagirov (iEPCBM)
     
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
