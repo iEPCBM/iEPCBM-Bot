@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
 
 '''
-    iEPCBM Bot (YaLVA-B1) is Wikipedia bot
-    Copyright (C) 2017, 2018  Rishat Kagirov (iEPCBM)
-	
-	This file is part of iEPCBM Bot.
+    iEPCBM Bot (YaLVA-B1) - Wikipedia bot
+    Copyright (C) 2017-2019  Rishat Kagirov (iEPCBM)
     
-    iEPCBM Bot is free software: you can redistribute it and/or modify
+    This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
@@ -18,10 +16,6 @@
     
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
-    
-    ***********************************************************************
-    Note:
-        YouTube is Google's trade mark
 '''
 
 from bot_config import *
@@ -29,14 +23,14 @@ from bot_config import *
 draft_prefix = u"Участник:IEPCBM Bot/Черновик/"
 
 SubscriberCountAndViewCountList = [
-    # {
-        # "ruWikipediaArticleTitle"  : u"Шарий, Анатолий Анатольевич",
-        # "data"                     : [{
-            # "channelName"              : u"Анатолий Шарий",
-            # "channelID"                : u"UCVPYbobPRzz0SjinWekjUBw",
-            # "postfix"                  : NONE
-        # }]
-    # },
+    {
+        "ruWikipediaArticleTitle"  : u"Шарий, Анатолий Анатольевич",
+        "data"                     : [{
+            "channelName"              : u"Анатолий Шарий",
+            "channelID"                : u"UCVPYbobPRzz0SjinWekjUBw",
+            "postfix"                  : NONE
+        }]
+    },
     {
         "ruWikipediaArticleTitle"  : u"Big Russian Boss",
         "data"                     : [{
@@ -229,14 +223,6 @@ SubscriberCountAndViewCountList = [
         "data"                     : [{
             "channelName"              : u"HolaSoyGerman.",
             "channelID"                : u"UCZJ7m7EnCNodqnu5SAtg8eQ",
-            "postfix"                  : NONE
-        }]
-    },
-    {
-        "ruWikipediaArticleTitle"  : u"Дорофеева, Надежда Владимировна",
-        "data"                     : [{
-            "channelName"              : u"DoDo VLOG",
-            "channelID"                : u"UCVAbBvins_GOfl0O7FegnGQ",
             "postfix"                  : NONE
         }]
     },
@@ -476,7 +462,7 @@ SubscriberCountAndViewCountList = [
         }]
     },
     {
-        "ruWikipediaArticleTitle"  : u"Сливки Шоу",
+        "ruWikipediaArticleTitle"  : u"Сливки шоу",
         "data"                     : [{
             "channelName"              : u"SlivkiShow",
             "channelID"                : u"UCU_yU4xGT9hrVFo6euH8LLw",
@@ -501,7 +487,7 @@ SubscriberCountAndViewCountList = [
         }]
     },
 	{
-        "ruWikipediaArticleTitle"  : u"Могилко, Марина Дмитриевна ",
+        "ruWikipediaArticleTitle"  : u"Могилко, Марина Дмитриевна",
         "data"                     : [{
             "channelName"              : u"Marina Mogilko",
             "channelID"                : u"UCLJl8-mbCfolWMkh1F1qfjA",
@@ -516,6 +502,14 @@ SubscriberCountAndViewCountList = [
             "channelName"              : u"Silicon Valley Girl",
             "channelID"                : u"UCiq1FIgtEK7LRAOB1JXTPig",
             "postfix"                  : u"Silicon Valley Girl"
+        }]
+    },
+	{
+        "ruWikipediaArticleTitle"  : u"Адушкина, Катя",
+        "data"                     : [{
+            "channelName"              : u"Katya Adushkina",
+            "channelID"                : u"UCI4McGpUbaV7YWkbY_Ap_Jw",
+            "postfix"                  : NONE
         }]
     }
 ]
