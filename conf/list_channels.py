@@ -508,7 +508,7 @@ SubscriberCountAndViewCountList = [
         "ruWikipediaArticleTitle"  : u"Адушкина, Катя",
         "data"                     : [{
             "channelName"              : u"Katya Adushkina",
-            "channelID"                : u"UCI4McGpUbaV7YWkbY_Ap_Jw",
+            "channelID"                : u"UCA0Xum6Bxx-rhmrog1A1ISQ",
             "postfix"                  : NONE
         }]
     }
