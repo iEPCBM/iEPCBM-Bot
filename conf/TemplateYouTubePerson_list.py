@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
 
 '''
-    iEPCBM Bot (YaLVA-B1) is Wikipedia bot
-    Copyright (C) 2017, 2018  Rishat Kagirov (iEPCBM)
-	
-	This file is part of iEPCBM Bot.
+    iEPCBM Bot (YaLVA-B1) - Wikipedia bot
+    Copyright (C) 2017  Rishat Kagirov (iEPCBM)
     
-    iEPCBM Bot is free software: you can redistribute it and/or modify
+    This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
@@ -21,7 +19,7 @@
     
     ***********************************************************************
     Note:
-        YouTube is Google's trade mark
+        Used Google's trade mark: YouTube
 '''
 
 from bot_config import *
