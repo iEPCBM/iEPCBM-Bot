@@ -64,6 +64,7 @@ def updateViewsAndSubscribersCount (member, site):
     fParams = [];
     templateParams = [];
     KTIsFound = False
+    IEBLogger.info (page.templatesWithParams())
     for template in page.templatesWithParams():
         if template[0].title() == nsTemplate + keyTemplate1 or \
            template[0].title() == nsTemplate + keyTemplate2 or \
