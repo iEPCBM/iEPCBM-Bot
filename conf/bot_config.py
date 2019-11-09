@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
 
 '''
-    iEPCBM Bot (YaLVA-B1) is Wikipedia bot
-    Copyright (C) 2017, 2018  Rishat Kagirov (iEPCBM)
-	
-	This file is part of iEPCBM Bot.
+    iEPCBM Bot (YaLVA-B1) - Wikipedia bot
+    Copyright (C) 2017  Rishat Kagirov (iEPCBM)
     
-    iEPCBM Bot is free software: you can redistribute it and/or modify
+    This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
@@ -24,13 +22,13 @@
     Program use GoogleAPI.
     GoogleAPIs Terms of Service - <https://developers.google.com/terms/>
     
-    **************************************************************************
+    ***********************************************************************
     Note:
-        YouTube is Google's trade mark
+        Used Google's trade mark: YouTube
 '''
 
 # == GoogleAPI ключ == 
-GoogleAPI_key_code = "XXXX" # Здесь всё прикрыто крестиками :P
+GoogleAPI_key_code = "AIzaSyAYPAswlVbs7fKoP0QFj6kazqzdLS9MJ9o" # Здесь всё прикрыто крестиками :P
 
 # == Круглые числа ==
 thousand = 1000
@@ -75,15 +73,29 @@ saveDescStrBaseFormatParamsBTPL = u"оформление "
 saveDescStrBaseCorrectedParamsTPL = u"исправление "
 saveDescStrContentGC = "содержимого "
 # saveDescStrBaseAlignContent  = u"выравнивание значений"
-saveDescPointerTPL_GC = u"в шаблоне YouTube персона"
+saveDescPointerTPL_GC = u"в шаблоне о видеоблогере"
 saveDescSeparator = u", "
 saveDescAnd = u"и "
 
 # == Шаблоны ==
 openTemplate = u"{{" # Открытие шаблонов
 closeTemplate = u"}}" # Закрытие шаблонов
-keyTemplate = u"Шаблон:YouTube персона" # Искомый шаблон
-keyOpenTemplate = openTemplate + u"YouTube персона" # Открытие искомого шаблона
+nsTemplate = u"Шаблон:"
+
+keyTemplate1 = u"YouTube персона" # Искомый шаблон 1
+keyOpenTemplate1 = openTemplate + u"YouTube персона" # Открытие искомого шаблона 1
+
+keyTemplate2 = u"Ютубер" # Искомый шаблон 2
+keyOpenTemplate2 = openTemplate + u"Ютубер" # Открытие искомого шаблона 2
+
+keyTemplate3 = u"Канал YouTube" # Искомый шаблон 3
+keyOpenTemplate3 = openTemplate + u"Канал YouTube" # Открытие искомого шаблона 3
+
+keyTemplate4 = u"Видеоблогеры" # Искомый шаблон 4
+keyOpenTemplate4 = openTemplate + u"Видеоблогеры" # Открытие искомого шаблона 4
+
+keyTemplate5 = u"Видеоблогер" # Искомый шаблон 5
+keyOpenTemplate5 = openTemplate + u"Видеоблогер" # Открытие искомого шаблона 5
 
 # === Форматирование содержимого шаблонов ===
 prefixListMember = u"\n* " # Используется в случае, если в значении аргумента шаблона должен использоваться список
