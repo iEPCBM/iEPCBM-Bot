@@ -21,6 +21,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 Program uses Google API.
 GoogleAPIs Terms of Service - <https://developers.google.com/terms/>
 
+YouTube API Services Terms of Service - <https://developers.google.com/youtube/terms/api-services-terms-of-service>
+
 Notice:
 YouTube is Google's trade mark
 ***
