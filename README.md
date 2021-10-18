@@ -36,3 +36,4 @@ Rishat Kagirov
 * E-mail: iepcbm@yandex.ru
 * I in ruwiki: <https://ru.wikipedia.org/wiki/Участник:IEPCBM>
 * This bot in ruwiki: <https://ru.wikipedia.org/wiki/Участник:IEPCBM_Bot>
+* Bot's Website in wmflabs: <https://tools-static.wmflabs.org/ipecbm-bot1>
